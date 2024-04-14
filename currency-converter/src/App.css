@@ -1,0 +1,77 @@
+.container {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.currencyPair {
+  font: 1em sans-serif;
+  width: 90%; /* Adjusted width for responsiveness */
+  max-width: 600px; /* Added max-width for larger screens */
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 12px;
+  color: rgb(7, 7, 7);
+  background-image: linear-gradient(180deg, #f5f5f8 0%, #eae9f0cc 100%);
+  text-align: center;
+  padding: 10px;
+  border: 1px solid; /* Added padding for better spacing */
+}
+
+h1 {
+  margin: 2rem;
+  padding-top: 1rem;
+}
+
+#myChart {
+  width: 100%;
+}
+
+button {
+  margin: 0.5rem;
+  background-color: rgb(163, 163, 187);
+  padding: 0.5rem 1rem; /* Added padding for better button size */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#exchangeChart {
+  margin: 2rem;
+  width: 100%; /* Set canvas width to 100% */
+  max-width: 800px; /* Set max-width for larger screens */
+
+}
+
+
+/* Media queries for responsiveness */
+@media (max-width: 368px) {
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  h1{
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+
+  #exchangeChart{
+    height: 100px;
+  }
+
+  .currencyPair {
+    width: 60%;
+  }
+}
+
+@media (min-width: 992px) {
+  .currencyPair {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .currencyPair {
+    width: 40%;
+  }
+}
